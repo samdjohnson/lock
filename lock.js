@@ -1,4 +1,4 @@
-var Lock = function(){
+var Lock = (function(){
     var keys = {};
 
     function lock( key ){
@@ -19,4 +19,4 @@ var Lock = function(){
     exports.islocked = islocked;
 
     return exports;
-};
+})();
